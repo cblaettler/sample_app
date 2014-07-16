@@ -27,6 +27,15 @@ RSpec.describe PagesController, type: :controller do
 
   it "should have the right title" do
       get 'home'
-      expect(response.body).to include("Ruby")
+      expect(response.body).to include("home")
+  end
+
+  it "should have the right title" do
+      get 'contact'
+      expect(response.body).to include("contact")
+  end
+  it "should have the right title" do
+      get 'about'
+      expect(response.body).to include("about")
   end
 end
