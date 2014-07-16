@@ -8,7 +8,7 @@ RSpec.describe PagesController, type: :controller do
       get 'home'
       expect(response).to be_success
     end
-
+  end
 
   describe "GET 'contact'" do
     it "returns http success" do
@@ -27,6 +27,6 @@ RSpec.describe PagesController, type: :controller do
 
   it "should have the right title" do
       get 'home'
-      expect(response.body).to include("Ruby on Rails Tutorial Sample App | Home")
+      expect(response.body).to include("Ruby")
   end
 end
